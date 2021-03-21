@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>HALAMAN ADMIN</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -40,16 +40,28 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
-    <a href="#menu-toggle" class="btn btn-default text-light" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 16 16">
+        <a href="#menu-toggle" class="btn btn-default text-light" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 16 16">
         <path d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
         <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z"/>
         </svg></a>
-        <a class="navbar-brand text-light fu-bold" href="#">HALAMAN ADMIN</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+
+        <a class="nav-link active text-light text-uppercase">
+            Halo 
+            <b>
+                <?php echo $_SESSION['username']; ?>
+            </b> 
+            
+            Anda
+            
+            <b>
+                <?php echo $_SESSION['level']; ?>
+            </b>
+        </a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
+            <div class="nav-item ">
+            
+            </div>
+        
         </div>
         <div class="d-flex">
             <a class="btn btn-outline-light" href="../../../../../include/logout.php">Log Out</a>
@@ -64,7 +76,7 @@
                 <li class="sidebar-brand">
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="/h/0/j/x/administators/">Dashboard</a>
                 </li>
                 <li>
                     <a href="#">Input Data</a>
@@ -89,9 +101,9 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
         
-            <div class="container-fluid">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                    <a class="btn  me-4 bd-highlight border border-3 bg-success bg-gradient" href="#">
+            <div class="container">
+                <div class="d-flex flex-row bd-highlight">
+                    <a class="btn me-3 bd-highlight border border-3 bg-success bg-gradient" href="#">
                         <div class="row align-items-center">
                             <div class="col text-white">
                                     <p class="fs-3 pt-1 fw-bold">0</p>
@@ -107,7 +119,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="btn  me-4 bd-highlight border border-3 bg-danger bg-gradient" href="#">
+                    <a class="btn  me-3 bd-highlight border border-3 bg-danger bg-gradient" href="#">
                         <div class="row align-items-center">
                             <div class="col text-white">
                                     <p class="fs-3 pt-1 fw-bold">0</p>
