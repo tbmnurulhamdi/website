@@ -40,19 +40,24 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
+        
+        <!-- icon pembuka sidebar -->
         <a href="#menu-toggle" class="btn btn-default text-light" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 16 16">
         <path d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
         <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z"/>
         </svg></a>
 
+        <!-- penyanbutan nama yang masuk melalui login setelah dicek oleh session -->
         <a class="nav-link active text-light text-uppercase">
             Halo 
+
+            <!--nama yang login -->
             <b>
                 <?php echo $_SESSION['username']; ?>
             </b> 
             
             Anda
-            
+            <!-- login sebagai siapa nama tersebut -->
             <b>
                 <?php echo $_SESSION['level']; ?>
             </b>
@@ -102,11 +107,15 @@
         <div id="page-content-wrapper">
         
             <div class="container">
+
+                <!-- membuat barisan kesamping secara responsive -->
                 <div class="d-flex flex-row bd-highlight">
+
+                    <!-- kotak menu-menu yang tersedia di halaman dashboard  -->
                     <a class="btn me-3 bd-highlight border border-3 bg-success bg-gradient" href="#">
                         <div class="row align-items-center">
                             <div class="col text-white">
-                                    <p class="fs-3 pt-1 fw-bold">0</p>
+                                    <p class="fs-3 pt-1 fw-bold">0</p> 
                                     <p class="fs-5 fw-bold">PENDUDUK</p>
                                     <p class="fs-6">Selengkapnya>></p>
                             </div>
