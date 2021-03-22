@@ -12,11 +12,11 @@
     <title>HALAMAN ADMIN</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="assets/css/simple-sidebar.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,7 +88,26 @@
                     
                 </li>
                 <li>
-                    <a href="#">Daftar data</a>
+                    <a href="#menu-bar" id="menu-bar">
+                        Dropdown link
+                    </a>
+                    <!-- <div id="wrap"> -->
+                        <div id="sidebar-wrap">
+                            <ul class="sidebar-nav" >
+                                <li><ahref="#">Action</ahref=></li>
+                                <li><ahref="#">Another action</ahref=></li>
+                                <li><ahref="#">Something else here</ahref=></li>
+                            </ul>
+                        </div>
+                    <!-- </div> -->
+                    
+
+                    <!-- <select class="form-select border border-0" >
+                        <option>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select> -->
                 </li>
                 <li>
                     <a href="#">Surat Menyurat</a>
@@ -136,7 +155,7 @@
                                     <p class="fs-6">Selengkapnya>></p>
                             </div>
                             <div class="pe-4 col">
-                            <object data="../../../../../assets/img/team.svg"  width="60" height="60"  type="image/svg+xml" fill="currentColor" viewBox="0 0 16 16" ></object> 
+                            <object data="/assets/img/team.svg"  width="60" height="60"  type="image/svg+xml" fill="currentColor" viewBox="0 0 16 16" ></object> 
                             </div>
                         </div>
                     </a>
@@ -163,12 +182,12 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
         <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -182,6 +201,10 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+    });
+    $("#menu-bar").hover(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrap").toggleClass("toggled");
     });
     </script>
 
