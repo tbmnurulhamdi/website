@@ -27,7 +27,7 @@ if($cek > 0){
 		$_SESSION['username'] = $username;
 		$_SESSION['level'] = "admin";
 		// alihkan ke halaman dashboard admin
-		header("location:/h/0/j/x/administators/");
+		header("location:../h/0/j/x/administators/index.php");
 
 	// cek jika user login sebagai pegawai
 	}else if($data['level']=="pegawai"){
@@ -53,5 +53,3 @@ if($cek > 0){
 }else{
 	header("location:/index.php?pesan=gagal");
 }
-
-?>

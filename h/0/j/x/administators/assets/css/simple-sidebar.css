@@ -95,39 +95,6 @@
     background: none;
 }
 
-/* #wrap {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrap.toggled {
-    padding-left: 250px;
-} */
-
-#sidebar-wrap {
-    /* display: none; */
-    z-index: 1;
-    position: fixed;
-    left: 250px;
-    width: 250px;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#sidebar-wrap.toggled {
-    display: block;
-    width: 0;
-    z-index: 0;
-}
 
 
 @media(min-width:768px) {
@@ -156,36 +123,24 @@
         margin-right: 0;
     }
 
-    /* #wrap {
-        padding-left: 250px;
-    }
-
-    #wrap.toggled {
-        padding-left: 0;
-    } */
-
-    #sidebar-wrap {
-        /* display: block; */
-        width: 0;
-        z-index: 0;
-    }
-
-    #sidebar-wrap.toggled {
-        /* display: none; */
-        width: 250px;
-        z-index: 1;
-    }
 }
-/* 
-.dropdown-menu > .dropdown-item:hover {
+
+.dropdown-menu {
+    background: #00000000;
+    position: relative;
+    width: 250px;
+    list-style: none;
+}
+
+.dropdown-menu > .dropdown-item {
     text-indent: 20px;
     line-height: 40px;
-    background: #000;
 }
 
-.dropdown-item {
-    padding-left: 50px;
-    width: 250px;
+.dropdown-item  {
+    margin-left: 50px;
+    /* margin-bottom: -2px; */
+    width: 200px;
     display: block;
     text-decoration: none;
     color: #999999;
@@ -196,13 +151,27 @@
 .dropdown-item:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: #555454;
+    /* background: rgba(255, 255, 255, 0.2); */
 }
 
 .dropdown-item:active,
 .dropdown-item:focus {
     text-decoration: none;
-} */
+}
+
+.logout a{
+    /* display: block; */
+    text-decoration: none;
+    color: #b60303;
+}
+
+.logout a:hover {
+    text-decoration: none;
+    color: rgb(238, 15, 15);
+    background: rgba(255, 0, 0, 0.438);
+}
+
 
 /* 
 .sidebar-nav li select {

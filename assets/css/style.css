@@ -2,8 +2,8 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100vh;
-	/*background:  #2F323A;*/
-	background: url(/assets/img/background.png)no-repeat;
+	background:  #2F323A;
+	/* background-image: url(/assets/img/1.jpg) no-repeat; */
 	background-size: cover;
 }
 
